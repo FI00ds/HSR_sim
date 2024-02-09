@@ -13,7 +13,7 @@ struct Base_Character{
     int aggro;
     int element;
     int path;
-}
+};
 
 struct Base_Character Trailblazer_des = {620.93, 460.84, 1203.5, 100, 125, 4, 1};
 
