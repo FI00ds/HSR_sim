@@ -1,8 +1,8 @@
 /*
 element->num: fire=1, wind=2, lightning=3, physical=4, ice=5, imaginary=6, quantum=7
+
 path->num: destruction=1, erudition=2, hunt=3, nihility=4, harmony=5, preservation=6, abundance=7
-*/
-/*
+
 Stats are for lv80 characters
 */
 struct Base_Character{
