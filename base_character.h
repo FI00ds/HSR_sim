@@ -10,14 +10,14 @@ struct Base_Character{
     float DEF;
     float HP;
     int SPD;
-    int aggro;
+    float aggro;
     int element;
     int path;
 };
 
-struct Base_Character Trailblazer_des = {620.93, 460.84, 1203.5, 100, 125, 4, 1};
+struct Base_Character Trailblazer_des = {620.93, 460.84, 1203.5, 100, 125.00, 4, 1};
 
-struct Base_Character Trailblazer_pre = {601.52, 606.38, 1241.86, 95, 150, 1, 6};
+struct Base_Character Trailblazer_pre = {601.52, 606.38, 1241.86, 95, 150.00, 1, 6};
 
 struct Base_Character Bailu = {562.72, 485.10, 1319.47, 98.00, 100.00, 3, 7};
 
