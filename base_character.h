@@ -16,9 +16,9 @@ struct Base_Character{
     int path;
 };
 
-struct Base_Character id8002 = {"Trailblazer_des", 620.93, 460.84, 1203.5, 100.00, 125.00, 4, 1};
+struct Base_Character id8002 = {"Destruction Trailblazer", 620.93, 460.84, 1203.5, 100.00, 125.00, 4, 1};
 
-struct Base_Character id8004 = {"Trailblazer_pre", 601.52, 606.38, 1241.86, 95.00, 150.00, 1, 6};
+struct Base_Character id8004 = {"Preservation Trailblazer", 601.52, 606.38, 1241.86, 95.00, 150.00, 1, 6};
 
 struct Base_Character id1211 = {"Bailu", 562.72, 485.10, 1319.47, 98.00, 100.00, 3, 7};
 
