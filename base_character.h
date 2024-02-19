@@ -85,7 +85,7 @@ struct Base_Character id1110 = {1110, "Lynx", 493.92, 551.25, 1058.40, 100.00, 1
 
 struct Base_Character id1212 = {1212, "Jingliu", 679.14, 485.10, 1435.90, 96.00, 125.00 , 5, 1};
 
-struct Base_Character id1210 = {1210, "guinaifen", 582.12, 441.00, 882.00, 106.00, 100.00 , 1, 4};
+struct Base_Character id1210 = {1210, "Guinaifen", 582.12, 441.00, 882.00, 106.00, 100.00 , 1, 4};
 
 struct Base_Character id1112 = {1112, "Topaz & Numby", 620.93, 412.34, 931.39, 110.00, 75.00 , 1, 3};
 
