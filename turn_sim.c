@@ -14,5 +14,5 @@ Start simulation
 
 
 int main(){
-    printf("%d", id8004.id);
+    printf("%d", bcid8004.id);
 }
