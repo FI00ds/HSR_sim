@@ -31,3 +31,5 @@ Misha
 bcid
 trid
 efres
+substat
+mainstat
