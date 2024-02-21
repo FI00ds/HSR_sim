@@ -61,7 +61,7 @@ int main(){
                                 trid1003, trid1002, trid1001, trid1204, trid1006, trid1207, trid1203, trid1205, trid1111, trid1005,
                                 trid1213, trid1208, trid1110, trid1212, trid1210, trid1112, trid1217, trid1302, trid1215, trid1303,
                                 trid1214, trid1305, trid1307, trid1306, trid1312};
-//select you characters
+//select your characters
     int team[4];
     int idindex[4];
     character_select(team, idlist, idindex);
@@ -69,5 +69,5 @@ int main(){
 //equip characters with their relics+lightcones
 
     struct stat_boost test = {"HP", 0.04};
-    printf("%f", test.amount);
+    printf("%02f", test.amount);
 }
