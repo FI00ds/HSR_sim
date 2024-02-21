@@ -105,4 +105,4 @@ struct traces trid1307 = {1307, {"ATK", 0.04}, {"WIN_DMG", 0.032}, {"ATK", 0.04}
 
 struct traces trid1306 = {1306, {"HP", 0.04}, {"CD", 0.053}, {"HP", 0.04}, {"EFRES", 0.04}, {"HP", 0.06}, {"CD", 0.08}, {"HP", 0.06}, {"EFRES", 0.06}, {"CD", 0.107}, {"HP", 0.08}};
 
-struct traces trid1312 = {8002, {"ICE_DMG", 0.032}, {"DEF", 0.05}, {"ICE_DMG", 0.032}, {"CR", 0.027}, {"ICE_DMG", 0.048}, {"DEF", 0.075}, {"ICE_DMG", 0.048}, {"CR", 0.04}, {"DEF", 0.10}, {"ICE_DMG", 0.064}};
+struct traces trid1312 = {1312, {"ICE_DMG", 0.032}, {"DEF", 0.05}, {"ICE_DMG", 0.032}, {"CR", 0.027}, {"ICE_DMG", 0.048}, {"DEF", 0.075}, {"ICE_DMG", 0.048}, {"CR", 0.04}, {"DEF", 0.10}, {"ICE_DMG", 0.064}};
