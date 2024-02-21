@@ -69,6 +69,6 @@ int main(){
 
 //equip characters with their relics+lightcones
 
-    struct stat_boost test = {"HP", 0.04};
-    printf("%f", test.amount);
+
+
 }
