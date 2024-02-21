@@ -56,7 +56,7 @@ int main(){
                                 bcid1003, bcid1002, bcid1001, bcid1204, bcid1006, bcid1207, bcid1203, bcid1205, bcid1111, bcid1005,
                                 bcid1213, bcid1208, bcid1110, bcid1212, bcid1210, bcid1112, bcid1217, bcid1302, bcid1215, bcid1303,
                                 bcid1214, bcid1305, bcid1307, bcid1306, bcid1312};
-    struct traces tcidlist[CHARACTER_COUNT]={
+    struct traces tridlist[CHARACTER_COUNT]={
                                 trid8002, trid8004, trid1211, trid1209, trid1206, trid1202, trid1201, trid1109, trid1108, trid1107,
                                 trid1106, trid1105, trid1104, trid1103, trid1102, trid1101, trid1013, trid1009, trid1008, trid1004,
                                 trid1003, trid1002, trid1001, trid1204, trid1006, trid1207, trid1203, trid1205, trid1111, trid1005,

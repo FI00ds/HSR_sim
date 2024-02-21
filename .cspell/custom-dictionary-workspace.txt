@@ -31,9 +31,9 @@ Sampo
 Seele
 substat
 Sushang
-tcidlist
 Tingyun
 trid
+tridlist
 Xuan
 Xueyi
 Yanqing
