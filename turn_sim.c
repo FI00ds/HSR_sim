@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include "base_character.h"
+#include "traces.h"
 
 /*
 Select the 4 team members
@@ -14,5 +15,6 @@ Start simulation
 
 
 int main(){
-    printf("%d", bcid8004.id);
+    struct stat_boost test = {"HP", 0.04};
+    printf("%f", test.amount);
 }
