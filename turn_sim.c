@@ -40,6 +40,7 @@ void character_select(int* team, int* idlist, int* idindex){
         }
         if (*(valid)==0 || *(valid+1)==0 || *(valid+2)==0 || *(valid+3)==0) valid_inputs=0;
     } while (!valid_inputs);
+    return;
 };
 
 int main(){
