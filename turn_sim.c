@@ -2,7 +2,9 @@
 #include <math.h>
 #include "base_character.h"
 #include "traces.h"
+#include "lightconestats.h"
 #define CHARACTER_COUNT 45
+#define LIGHTCONE_COUNT 93
 /*
 Select the 4 team members
 Equip them with their respective relics+lightcone
