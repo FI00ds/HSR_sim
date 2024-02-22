@@ -6,7 +6,9 @@ Bailu
 bcid
 bcidlist
 Bronya
+Dreamville
 efres
+Forewoven
 Gepard
 Guinaifen
 Hanya
@@ -19,8 +21,10 @@ idlist
 Imbibitor
 Jing
 Jingliu
+lcid
 lightcone
 lightcones
+lightconestats
 Lunae
 Luocha
 mainstat
