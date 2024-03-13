@@ -18,9 +18,9 @@ void character_select(int* team, int* idlist, int* idindex){
     int valid_inputs=1;
     do
     {
-        if (!valid_inputs) printf("You must select 4 different and valid character IDs, please try again");
+        if (!valid_inputs) printf("You must select 4 different and valid character IDs, please try again\n");
         valid_inputs=1;
-        printf("Select your team by inputting their character id");
+        printf("Select your team by inputting their character id\n");
         int member1=0, member2=0, member3=0, member4=0;
         scanf("%d%d%d%d", &member1, &member2, &member3, &member4);
         *team = member1; *(team+1) = member2; *(team+2) = member3; *(team+3) = member4;
@@ -45,6 +45,10 @@ void character_select(int* team, int* idlist, int* idindex){
     return;
 };
 
+void equipment_get(){
+
+};
+
 int main(){
     int idlist[CHARACTER_COUNT]={
                                 8002, 8004, 1211, 1209, 1206, 1202, 1201, 1109, 1108, 1107,
@@ -64,13 +68,14 @@ int main(){
                                 trid1003, trid1002, trid1001, trid1204, trid1006, trid1207, trid1203, trid1205, trid1111, trid1005,
                                 trid1213, trid1208, trid1110, trid1212, trid1210, trid1112, trid1217, trid1302, trid1215, trid1303,
                                 trid1214, trid1305, trid1307, trid1306, trid1312};
+
 //select your characters
     int team[4];
     int idindex[4];
     character_select(team, idlist, idindex);
 
 //equip characters with their relics+lightcones
-
+    equipment_get();
 
 
 }
