@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-#include "base_character.h"
 #include "traces.h"
 #define CHARACTER_COUNT 45
 #define LIGHTCONE_COUNT 93
