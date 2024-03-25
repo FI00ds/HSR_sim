@@ -1,18 +1,20 @@
 #include <stdio.h>
 #include <math.h>
+#include<sqlite3.h>
+#include<stdlib.h>
 #include "traces.h"
 #define CHARACTER_COUNT 45
 #define LIGHTCONE_COUNT 93
+#define DATABASE 'data.db'
+
+int idlist[CHARACTER_COUNT];
+
+char *fetchid = "SELECT id FROM base_character;";
+
 /*
 Select the 4 team members
-Equip them with their respective relics+lightcone
-check for set effects
-calculate final stats
-select scenario (50% energy for MOC, 0% otherwise)
-load action scripts, check for conflicts with characters | not needed for manual play mode
-Start simulation
 */
-void character_select(int* team, int* idlist){
+void character_select(int *team, int *idlist){
     int valid_inputs=1;
     do
     {
@@ -46,20 +48,32 @@ void equipment_get(){
 
 };
 
+static int idlistfill(void *NotUsed, int argc, char **argv, char **azColName){
+    int i=0;
+    printf("%s = %d", azColName, argv);
+    //idlist[i++] = *argv;
+};
+
 int main(){
-    int idlist[CHARACTER_COUNT]={
-                                8002, 8004, 1211, 1209, 1206, 1202, 1201, 1109, 1108, 1107,
-                                1106, 1105, 1104, 1103, 1102, 1101, 1013, 1009, 1008, 1004,
-                                1003, 1002, 1001, 1204, 1006, 1207, 1203, 1205, 1111, 1005,
-                                1213, 1208, 1110, 1212, 1210, 1112, 1217, 1302, 1215, 1303,
-                                1214, 1305, 1307, 1306, 1312};
+    sqlite3 *db;
+    char **zErrMsg = 0;
+    int rc;
 //select your characters
     int team[4];
     int idindex[4];
-    character_select(team, idlist);
+    rc = sqlite3_open("data.db", &db);
+    if( rc ) {
+        fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+        return(0);
+    } else {
+        fprintf(stdout, "Opened database successfully\n");
+    }
+
+    rc = sqlite3_exec(db, fetchid, idlistfill, 0, zErrMsg);
+    //character_select(team, idlist);
 
 //equip characters with their relics+lightcones
-    equipment_get();
-
-
+    //equipment_get();
+rc = sqlite3_close(db);
+return 0;
 }
