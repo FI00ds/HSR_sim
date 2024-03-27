@@ -44,6 +44,24 @@ void character_select(int *team, int *idlist){
     return;
 };
 
+struct Character{
+    int id;
+    char* NAME;
+    float ATK;
+    float DEF;
+    float HP;
+    float SPD;
+    float aggro;
+    int element;
+    int path;
+    struct relic helmet;
+    struct relic glove;
+    struct relic body;
+    struct relic boots;
+    struct relic orb;
+    struct relic rope;
+};
+
 void equipment_get(){
 
 };
